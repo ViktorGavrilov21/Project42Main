@@ -22,6 +22,10 @@ void sort_bubble(int array[], int size) {
 }
 
 string find_duplicates(int array[], int size) {
+	if (size <= 0) {
+		return "Error";
+	}
+
 	sort_bubble(array, size);
 	string duplicate = "";
 
